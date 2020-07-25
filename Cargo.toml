@@ -1,6 +1,6 @@
 [package]
 name = "rbl_circular_buffer"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Simone Mosciatti <simone@redbeardlab.com>"]
 edition = "2018"
 repository = "https://github.com/RedBeardLab/circular-buffer-rs"
@@ -8,6 +8,7 @@ license = "MIT"
 keywords = ["buffer", "circular", "circular-buffer", "zero", "allocation"]
 description = "A zero-allocation, fast, circular buffer implementation in Rust."
 documentation = "https://docs.rs/crate/rbl_circular_buffer"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
