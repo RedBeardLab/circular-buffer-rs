@@ -6,6 +6,7 @@ edition = "2018"
 repository = "https://github.com/RedBeardLab/circular-buffer-rs"
 license = "MIT"
 keywords = ["buffer", "circular", "circular-buffer", "zero", "allocation"]
+description = "A zero-allocation, fast, circular buffer implementation in Rust."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
