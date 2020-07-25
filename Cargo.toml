@@ -1,6 +1,6 @@
 [package]
 name = "rbl_circular_buffer"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Simone Mosciatti <simone@redbeardlab.com>"]
 edition = "2018"
 repository = "https://github.com/RedBeardLab/circular-buffer-rs"
