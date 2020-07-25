@@ -288,15 +288,15 @@ impl<T> CircularBuffer<T> {
         return to_push.len();
     }
 
-    /// The `fast_fill` method is supposed to be a faster alternative to the `fill` one.
-    /// However, benchmarks failed to show any difference in performance. If any the showed the
-    /// `fast_fill` method being a little slower.
+    /// The `_fast_fill` method is supposed to be a faster alternative to the `fill` one.
+    /// However, benchmarks failed to show any difference in performance.
+    /// If the benchmark showed any difference, it was the `_fast_fill` method being a little slower.
     ///
-    /// The `fast_fill` method is more complex that the `fill` method, so I suggest to rely on the
+    /// The `_fast_fill` method is more complex that the `fill` method, so I suggest to rely on the
     /// simpler `fill`. However both methods passed the same properties tests, so they should be
     /// equally correct.
     ///
-    /// The `fast_fill` is implemented using raw pointer and memcopy. While the `fill` method
+    /// The `_fast_fill` is implemented using raw pointer and memcopy. While the `fill` method
     /// pull elements using the iterator and simply push them to the back of the vector.
     pub fn _fast_fill(&mut self, return_vector: &mut Vec<T>) -> usize {
         if self.len() == 0 {
