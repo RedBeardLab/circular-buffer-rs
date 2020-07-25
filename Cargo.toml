@@ -1,0 +1,24 @@
+[package]
+name = "rbl_circular_buffer"
+version = "0.1.0"
+authors = ["Simone Mosciatti <simone@redbeardlab.com>"]
+edition = "2018"
+repository = "https://github.com/RedBeardLab/circular-buffer-rs"
+license = "MIT"
+keywords = ["buffer", "circular", "circular buffer", "zero alloc", "zero-alloc", "zero allocation"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dev-dependencies]
+proptest = "0.9.6"
+criterion = "0.3"
+
+[[bench]]
+name = "fast_fill_vs_fill"
+harness = false
+
+[[bench]]
+name = "fast_fill_vs_fill_by_hand"
+harness = false
