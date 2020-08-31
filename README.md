@@ -10,7 +10,7 @@ The circular buffer never wait, if the buffer is full, it overwrite the first el
 The API is extremelly simple, you create the buffer specify how many elements the buffer can
 hold. Then you can start pushing elements into it.
 
-```
+```rust
 use rbl_circular_buffer::*;
 
 let mut buffer = CircularBuffer::new(3);
@@ -40,7 +40,7 @@ There are two ways to read the elements from the buffer.
 
 The iterator will consume the elements in the buffer.
 
-```
+```rust
 use rbl_circular_buffer::*;
 
 let mut buffer = CircularBuffer::new(3);
@@ -65,7 +65,7 @@ Think about communication between threads, each thread can have a reference to t
 enough, or simply if there are too many elements, the lock will be hold for a long period of
 time. The alternative is to fill a vector.
 
-```
+```rust
 use rbl_circular_buffer::*;
 
 // let's make a bigger vector
@@ -98,6 +98,3 @@ buffer.fill(&mut v);
 assert_eq!(vec![2, 3, 4], v);
 assert_eq!(4, buffer.len())
 ```
-
-
-
